@@ -1,0 +1,32 @@
+header {
+  background-color: black;
+  
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 4rem;
+  padding-right: 4rem;
+  height: 5rem;
+}
+.lux-logo {
+  color: rgb(255, 255, 255);
+}
+.nav-option {
+  list-style: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+}
+.nav-option > li {
+  padding: 1rem;
+}
+.nav-option > li:hover {
+  color: red;
+}
+a {
+  text-decoration: none !important;
+  color: inherit;
+}
+header a:hover {
+  color: red;
+}
