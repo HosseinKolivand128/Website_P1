@@ -1,0 +1,101 @@
+header {
+  background-color: black;
+}
+body {
+  /* background-color: coral; */
+}
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  height: 5rem;
+}
+.lux-logo {
+  color: rgb(255, 255, 255);
+  display: block;
+  margin: initial;
+  padding-left: 35px;
+}
+.nav-option {
+  margin: initial;
+  list-style: none;
+  color: rgb(255, 255, 255);
+  display: flex;
+  padding-right: 25px;
+}
+.nav-option > li {
+  padding: 1rem;
+}
+.nav-option > li:hover {
+  color: red;
+}
+a {
+  text-decoration: none !important;
+  color: white;
+}
+header a:hover {
+  color: red;
+}
+
+@media screen and (max-width: 768px) {
+  body.active {
+    overflow: hidden;
+  }
+
+  .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column nowrap;
+  }
+
+  .nav-option {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4, 100px);
+    position: absolute;
+    width: 100%;
+    top: -5000px;
+  }
+
+  .nav-option.active {
+    top: 100%;
+    /* z-index: 99; */
+    height: 100vh;
+    font-size: 1.5rem;
+    background-color: black;
+  }
+
+  .toggle-menu {
+    cursor: pointer;
+    padding-right: 25px;
+  }
+
+  .toggle-menu .bar {
+    width: 30px;
+    background-color: white;
+    padding-bottom: 3px;
+    margin: 0.4rem;
+    display: block;
+    transition: all 0.2s ease-in-out;
+  }
+  #moblie-menu {
+    position: absolute;
+    /* top: 15%;
+    right: 5%; */
+    transform: translate(5%, 20%);
+  }
+
+  #mobile-menu.is-active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  #mobile-menu.is-active .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(0.84rem);
+    /* padding-right: 5px; */
+  }
+
+  #mobile-menu.is-active .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-0.84rem);
+    /* padding-right: 5px; */
+  }
+} ;
