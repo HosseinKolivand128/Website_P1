@@ -234,8 +234,8 @@ header a:hover {
 
 @media screen and (max-width: 768px) {
   .card {
-    background-color: aqua;
-    min-width: 150px;
+    background-color: red;
+    min-width: 330px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -409,4 +409,29 @@ header a:hover {
     max-width: min-content;
     min-width: 320px;
   }
+}
+
+/*Footer*/
+footer {
+  background-color: rgb(0, 0, 44);
+  padding: 10px;
+  min-height: 27vh;
+}
+.info h3 {
+  color: red;
+}
+.info {
+  color: aliceblue;
+  padding: 10px;
+}
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+.info {
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
 }
