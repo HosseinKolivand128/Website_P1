@@ -190,7 +190,7 @@ header a:hover {
   padding-bottom: 0.5rem;
 }
 
-.contents p {
+.contents > p {
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -203,10 +203,27 @@ header a:hover {
   justify-content: space-around;
   align-items: center;
   margin-top: 5px;
+  flex-flow: wrap;
 }
 
 .card {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin: 12px;
 }
+.card-title {
+  font-weight: 750;
+}
+.card-text {
+  font-size: large;
+}
+
+.card > img {
+  margin-top: 5px;
+}
+
+@media screen and(max-width:768px) {
+}
+
+/*Competitions Section (4)*/
