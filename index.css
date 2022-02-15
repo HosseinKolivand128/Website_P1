@@ -181,9 +181,12 @@ header a:hover {
 }
 
 .contents {
-  padding: 1.5rem;
+  padding: 10rem;
 }
-.contents h2 {
+.Titles {
+  padding-top: 30px;
+}
+.Titles h2 {
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -191,7 +194,7 @@ header a:hover {
   padding-bottom: 0.5rem;
 }
 
-.contents > p {
+.Titles > p {
   color: white;
   text-align: center;
   text-transform: uppercase;
@@ -253,7 +256,7 @@ header a:hover {
   position: absolute;
   left: 20%;
   top: 90%;
-  bottom:90%;
+  bottom: 90%;
   right: 20%;
   font-weight: bold;
 }
@@ -334,4 +337,10 @@ header a:hover {
     grid-column: 1/2;
     grid-row: 5/6;
   }
+}
+
+/*section 5 -sign up*/
+
+.Signup{
+  background-image: url();
 }
