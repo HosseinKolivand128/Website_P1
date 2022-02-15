@@ -165,6 +165,9 @@ header a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .offer {
+    min-width: 150px;
+  }
   .offers-container {
     display: grid;
     grid-template-columns: 1fr;
@@ -188,6 +191,7 @@ header a:hover {
 }
 .Titles h2 {
   color: white;
+  font-size: calmp(1rem, 5vw, 2rem);
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 2px;
@@ -211,6 +215,7 @@ header a:hover {
 }
 
 .card {
+  background-color: aqua;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -227,7 +232,15 @@ header a:hover {
   margin-top: 5px;
 }
 
-@media screen and(max-width:768px) {
+@media screen and (max-width: 768px) {
+  .card {
+    background-color: aqua;
+    min-width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 12px;
+  }
 }
 
 /*Competitions Section (4)*/
@@ -341,6 +354,59 @@ header a:hover {
 
 /*section 5 -sign up*/
 
-.Signup{
-  background-image: url();
+.Signup {
+  background-image: linear-gradient(to left, rgb(0, 0, 0, 0), rgb(0, 0, 0, 1)),
+    url(image/alexey-savchenko-k4Akpt5-Sfk-unsplash.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 35vh;
+}
+.signup-title {
+  padding-top: 15px;
+}
+.signup-title h1 {
+  color: aliceblue;
+}
+.signup-title p {
+  color: aliceblue;
+}
+
+.signup-content {
+  text-align: center;
+}
+.signup-form {
+  padding-top: 40px;
+}
+.form {
+  display: flex;
+  flex-flow: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.signup-input {
+  min-width: 17vw;
+  border-radius: 5px;
+  height: 40px;
+  margin-right: 10px;
+}
+.btn {
+  height: 40px;
+}
+@media screen and (max-width: 768px) {
+  .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .signup-input {
+    min-width: 320px;
+    margin-right: 1px;
+    margin-bottom: 10px;
+  }
+  .btn {
+    max-width: min-content;
+    min-width: 320px;
+  }
 }
