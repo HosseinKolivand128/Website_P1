@@ -112,6 +112,9 @@ header a:hover {
   justify-content: flex-start;
   align-items: center;
 }
+.visibility {
+  display: none;
+}
 .content {
   padding-left: 3rem;
 }
